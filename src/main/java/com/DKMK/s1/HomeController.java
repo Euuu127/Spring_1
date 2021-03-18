@@ -42,11 +42,11 @@ public class HomeController {
 		System.out.println("테스트다~~~~~~~");
 	}
 	
-	//test2 print //URL : /member/memberJoin
-	@RequestMapping(value="/member/memberJoin.do")
-	public void test2() {
-		System.out.println("test 2~~~~~~~~~~~~~~");
-	}
+//	//test2 print //URL : /member/memberJoin
+//	@RequestMapping(value="/member/memberJoin.do")
+//	public void test2() {
+//		System.out.println("test 2~~~~~~~~~~~~~~");
+//	}
 	
 	
 	

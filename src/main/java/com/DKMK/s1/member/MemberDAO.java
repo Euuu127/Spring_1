@@ -55,8 +55,8 @@ public class MemberDAO {
 	public MemberDTO login(MemberDTO memberDTO)throws Exception{
 		
 		//1. 로그인 정보 
-		String user="user01";
-		String password="user01";
+		String user="mark02";
+		String password="mark127";
 		String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		
