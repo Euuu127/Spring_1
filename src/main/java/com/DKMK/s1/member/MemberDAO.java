@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 import org.springframework.stereotype.Repository;
 
-//import oracle.jdbc.driver.DBConversion;
+import oracle.jdbc.driver.DBConversion;
 
 @Repository 
 public class MemberDAO {
