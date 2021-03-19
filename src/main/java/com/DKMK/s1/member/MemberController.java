@@ -25,18 +25,10 @@ public class MemberController {
 	}
 
 	@RequestMapping(value = "/member/memberLogin", method = RequestMethod.POST)
-	public String memberLogin2(HttpServletRequest request) throws Exception {
-		String id = request.getParameter("id");
-		String pw = request.getParameter("pw");
-
-		MemberDTO memberDTO = new MemberDTO();
-		memberDTO.setId(id);
-		memberDTO.setPw(pw);
-
+	public String memberLogin(MemberDTO memberDTO, Model model) throws Exception {
 		memberDTO=memberservice.memberLogin(memberDTO);
 
-		System.out.println(memberDTO);
-		request.setAttribute("dto", memberDTO);
+		model.addAttribute("dto", memberDTO);
 		return "member/memberPage";
 		
 	}
