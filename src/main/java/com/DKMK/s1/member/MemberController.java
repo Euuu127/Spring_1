@@ -35,12 +35,10 @@ public class MemberController {
 		return modelAndView;
 		
 	}
-
-	@RequestMapping(value = "/member/memberJoin", method = RequestMethod.GET)
-	public String memberJoin(String id, String pw, String name, String phone, String email) {
-		return "member/memberJoin";
-
-
+	
+	//, method = RequestMethod.GET
+	@RequestMapping(value = "/member/memberJoin")
+	public void memberJoin() {
 
 	}
 
